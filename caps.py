@@ -16,8 +16,8 @@ def random_case(text):
     return text
 
 def main():
-    parser = argparse.ArgumentParser(description="仿池塘的大小写崩坏写的程序")
-    parser.add_argument("text", help="输入的文本，可以是中文")
+    parser = argparse.ArgumentParser(description="仿池沼的大小写114514写的程序")
+    parser.add_argument("text", help="输入的文本，可以是中文，也可以是Homo语")
     args = parser.parse_args()
     print(random_case(args.text))
 
