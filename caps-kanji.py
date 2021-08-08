@@ -1,11 +1,12 @@
 import sys
 argv=sys.argv
 def main(isc=False):
-    try:
-        from pypinyin import lazy_pinyin
-    except:
-        print('You haven\'t installed pypinyin package yet. Use\"pip install pypinyin\" to install it.')
-        sys.exit(255)
+    if isc:
+        try:
+            from pypinyin import lazy_pinyin
+        except:
+            print('You haven\'t installed pypinyin package yet. Use\"pip install pypinyin\" to install it.')
+            sys.exit(255)
     issmall=True
     ans=[]
     if isc:
