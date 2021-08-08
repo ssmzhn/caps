@@ -11,7 +11,7 @@ caps.py:
 
 caps-terminal.py:  
 命令行参数：  
-用法：python &lt;文件名&rt; &lt;字符串&rt;  
+用法：python &lt;文件名> &lt;字符串>;  
 如：python caps-terminal.py hello world  
 输出：hElLo wOrLd  
 
