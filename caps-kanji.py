@@ -51,7 +51,10 @@ elif argv[1][0]=='-' and not(argv[1] in opt):
 elif argv[1]=='-c' or argv[1]=='--chinese':
     if re.match('^哼{3}啊+$',' '.join(argv[2:])):
         print('臭死力')
-    else:main(True)
+    elif re.match('114514',' '.join(argv[2:])) or re.match('1919810',' '.join(argv[2:])):
+        print('臭死力')
+    else:
+        main(True)
 elif argv[1]=='-h' or argv[1]=='--help':
     print('Usage: python '+argv[0]+' [options] <string>')
     print('    For example: python '+argv[0]+' hello world')
@@ -59,6 +62,9 @@ elif argv[1]=='-h' or argv[1]=='--help':
     print('    Another example: python '+argv[0]+' [-c] 你好')
     print('-h|--help: get help')
 else:
-    if re.match('^哼{3}啊+$',' '.join(argv[2:])):
+    if re.match('^哼{3}啊+$',' '.join(argv[1:])):
         print('臭死力')
-    else:main(False)
+    elif re.match('114514',' '.join(argv[1:])) or re.match('1919810',' '.join(argv[2:])):
+        print('臭死力')
+    else:
+        main(False)
