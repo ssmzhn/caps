@@ -34,7 +34,7 @@ def main(isc=False):
             else:
                 ans.append(y)
         ans.append(' ')
-        issmall=True
+        #issmall=True
     str2=''.join(ans)
     print(str2)
 
